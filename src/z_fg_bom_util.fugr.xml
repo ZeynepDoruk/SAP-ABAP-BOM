@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>BOM FUNCTİON GROUP</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZ_FG_BOM_UTILTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZ_FG_BOM_UTIL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_CHECK_HEADER</FUNCNAME>
+     <SHORT_TEXT>&quot;BOM Header Validation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PLANT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZDE_WRAKAN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_STLAN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZDE_STLAN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_STLAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZDE_STLAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DATUV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>DATUV</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_MESSAGE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PLANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant Where BOM or Alternative/Variant Created</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_STLAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BOM Usage</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_STLAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Alternatif BOM numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DATUV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Valid-From Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_RC</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
